@@ -1,5 +1,12 @@
 <section id="categories">
-    <h2>Categories</h2>
+    <h2>
+        {% case site.language %}
+            {% when "it" %}
+                Categorie
+            {% else %}
+                Categories
+        {% endcase %}
+    </h2>
     <div class="flex flex-wrap content-stretch">
         <div class="col-6">Hamburger</div>
         <div class="col-6">Hamburger</div>
